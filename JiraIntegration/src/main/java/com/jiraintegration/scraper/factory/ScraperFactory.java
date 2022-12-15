@@ -30,7 +30,7 @@ public class ScraperFactory {
     Parser parser = new JiraParser();
     Persister persister = getPersister(scraperType, persistLocation);
 
-    return new JiraExecutableScraper(fetcher, parser, persister);
+    return new JiraExecutableScraper(fetcher, parser, persister, configuration.getInterval());
   }
 
   private static JiraPersister getPersister(String scraperType, String persistLocation) throws JiraException {

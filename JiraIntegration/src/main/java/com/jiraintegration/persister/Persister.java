@@ -9,4 +9,6 @@ import com.jiraintegration.result.JiraResult;
 public interface Persister {
 
   JiraResult persist(List<Issue> issues) throws JiraException;
+
+  String getFileType();
 }

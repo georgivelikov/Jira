@@ -46,8 +46,6 @@ public abstract class JiraPersister implements Persister {
     return new JiraResult(issues.size(), false, true, null);
   }
 
-  protected abstract String getFileType();
-
   protected abstract String getFileContent(Issue issue) throws JiraException;
 
   protected String buildFilePath(String id) {

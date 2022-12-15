@@ -12,7 +12,7 @@ public class JiraPersisterJson extends JiraPersister {
   }
 
   @Override
-  protected String getFileType() {
+  public String getFileType() {
     return FILE_TYPE;
   }
 
