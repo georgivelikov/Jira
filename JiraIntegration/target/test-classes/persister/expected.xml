@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><issue><id>1866101</id><key>JSWSERVER-21305</key><link>https://jira.atlassian.com/browse/JSWSERVER-21305</link><summary>When Lexorank duplicate rank problem is fixed through REST API, it does not clear the failure reason</summary><description>h3. Issue Summary&#13;
+&#13;
+This is reproducible on Data Center: yes&#13;
+h3. Steps to Reproduce&#13;
+ # Deliberately update the database so that two rows in the "AO_60DB71_LEXORANK" table have the same Rank value. &#13;
+ # Run the Lexorank check in the UI.  It will fail on the last test - the duplicate rank test. &#13;
+ # Follow the [https://confluence.atlassian.com/jirakb/how-to-fix-duplicate-rank-values-for-a-rank-field-779159224.html] to get the results of the integrity checks from the endpoint /rest/greenhopper/1.0/lexorank/integrity.  The last check will fail and list the failure reason with the duplicated value.  &#13;
+ # Run the REST API call via Postman to fix the duplicate rank. &#13;
+ # Run the integrity check again from the endpoint   /rest/greenhopper/1.0/lexorank/integrity.  &#13;
+&#13;
+h3. Expected Results&#13;
+&#13;
+It will have fixed the Lexorank duplicate and clear the failure reason. &#13;
+h3. Actual Results&#13;
+&#13;
+The duplicate rank issue is fixed and the test passes but it still lists a failure reason:&#13;
+{noformat}&#13;
+"name":"Duplicate ranks check","description":"Checks if there are any duplicate rank values for a rank field.","passed":true,"failureReason":"Detected duplicate ranks for rank field 10100 : {0|i0001j:=2}","fatal":false  {noformat}&#13;
+h3. Workaround&#13;
+&#13;
+&#13;
+Currently there is no known workaround for this behavior. A workaround will be added here when available</description><priority>Low</priority><issueType>Bug</issueType><reporter>samann</reporter><createDate>2022-03-30T17:40:49.000+0000</createDate><comments><comment><author>35da6706bcca</author><text>It looks like the command explained in the KB article referred above for fixing the duplicates actually fixes one duplicate at a time. Running the command several times until getting no error message for duplicate values, fixes the problem at the end. In my case I had to run the fix command around 25 times to fix all duplicates on Jira V.8.20.7. Maybe it helps for those with low number of duplicate LexoRank duplicate rank values.&#13;
+&#13;
+.  </text></comment><comment><author>3c25206fc48e</author><text>Thanks Akyildiz :)&#13;
+&#13;
+I'm actually the reason this defect was open since I tried using the REST API to resolve the issue in our production environment and ended up doing DB mod.&#13;
+&#13;
+Good to know I just need to run the REST API call a few times :)</text></comment><comment><author>610caa47fd3d</author><text>This impacts us on 8.20.2</text></comment></comments></issue>

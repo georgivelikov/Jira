@@ -1,0 +1,1711 @@
+{
+  "expand": "schema,names",
+  "startAt": 0,
+  "maxResults": 5,
+  "total": 197,
+  "issues": [
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "1881756",
+      "self": "https://jira.atlassian.com/rest/api/2/issue/1881756",
+      "key": "JWMCLOUD-266",
+      "fields": {
+        "summary": "Nesting not functional under EPIC issue types for Company managed projects",
+        "issuetype": {
+          "self": "https://jira.atlassian.com/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://jira.atlassian.com/secure/viewavatar?size=xsmall&avatarId=51493&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 51493
+        },
+        "created": "2022-07-11T19:07:50.000+0000",
+        "description": "{panel:title=Atlassian Update - 2nd December 2022|borderStyle=solid|borderColor=#2684ff|titleBGColor=#2684ff|bgColor=#ffffff}\r\nHi everyone,\r\n\r\nThank you for your ongoing patience as we work on this bug.\r\n\r\nWe are currently in the process of testing a fix. This fix has been rolled out to 5% of customers so far and we've seen positive results. The roll out will get progressively faster as we gain confidence it works across all domains and projects. We're projecting a full roll out by the end of next week if things continue to go well. Thank you again for your patience and keep an eye out on this ticket for further updates.\r\n\r\nThe Atlassian Cloud team\r\n{panel}\r\nh3. Issue Summary\r\n\r\nThis is reproducible on Data Center: yes\r\nWhen using EPIC issue type in Company managed projects, nesting of tasks is not functional.\r\nh3. Steps to Reproduce\r\n # Step 1\r\n ## Create an EPIC issue type within a company managed project\r\n ## Create a task and associated subtasks\r\n # Step 2\r\n ## Refresh the list view, and all tasks and subtask will show up at the top level and not nested\r\n\r\nh3. Expected Results\r\n\r\nThe tasks and subtasks are all expected to stay in a nested form as shown\r\n\r\n!Screen Shot 2022-07-11 at 3.06.46 PM.png|width=505,height=146!\r\n\r\n \r\nh3. Actual Results\r\n\r\nThis is how the tasks and subtasks within EPIC issue type are showing up\r\n\r\n!Screen Shot 2022-07-11 at 3.05.55 PM.png|width=454,height=141!\r\nh3. Workaround\r\n\r\nContact support",
+        "reporter": {
+          "self": "https://jira.atlassian.com/rest/api/2/user?username=235407b17d69",
+          "name": "235407b17d69",
+          "key": "JIRAUSER5641256",
+          "avatarUrls": {
+            "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5641256&avatarId=6632292",
+            "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5641256&avatarId=6632292",
+            "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5641256&avatarId=6632292",
+            "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5641256&avatarId=6632292"
+          },
+          "displayName": "Emmanuel",
+          "active": true,
+          "timeZone": "UTC"
+        },
+        "comment": {
+          "comments": [
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3127882",
+              "id": "3127882",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f8029cffaed9",
+                "name": "f8029cffaed9",
+                "key": "JIRAUSER5891926",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5891926&avatarId=6912623"
+                },
+                "displayName": "Amy Holcomb",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "I would love for this to be fixed! Thank you!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f8029cffaed9",
+                "name": "f8029cffaed9",
+                "key": "JIRAUSER5891926",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5891926&avatarId=6912623"
+                },
+                "displayName": "Amy Holcomb",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-02T14:33:08.170+0000",
+              "updated": "2022-08-02T14:33:08.170+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3127918",
+              "id": "3127918",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=ef9a4f9d1c37",
+                "name": "ef9a4f9d1c37",
+                "key": "JIRAUSER5825137",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5825137&avatarId=6838691"
+                },
+                "displayName": "Megan Moulton",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Having this intermittently effect projects in client's environments; thanks for looking into this issue! Hope resolved soon ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=ef9a4f9d1c37",
+                "name": "ef9a4f9d1c37",
+                "key": "JIRAUSER5825137",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5825137&avatarId=6838691",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5825137&avatarId=6838691"
+                },
+                "displayName": "Megan Moulton",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-02T19:49:25.385+0000",
+              "updated": "2022-08-02T19:49:25.385+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3128917",
+              "id": "3128917",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=bc5f85a1573d",
+                "name": "bc5f85a1573d",
+                "key": "JIRAUSER6135660",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6135660&avatarId=7178273"
+                },
+                "displayName": "Jos",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "It would be great to have this fixed indeed!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=bc5f85a1573d",
+                "name": "bc5f85a1573d",
+                "key": "JIRAUSER6135660",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6135660&avatarId=7178273",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6135660&avatarId=7178273"
+                },
+                "displayName": "Jos",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-03T13:34:13.316+0000",
+              "updated": "2022-08-03T13:34:13.316+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3131407",
+              "id": "3131407",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f7d0b27fb883",
+                "name": "f7d0b27fb883",
+                "key": "JIRAUSER5970888",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5970888&avatarId=6999926"
+                },
+                "displayName": "Sam Maxim",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "This is a blocker for getting some of our new projects adopted. Would *love* to see it fixed soon!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f7d0b27fb883",
+                "name": "f7d0b27fb883",
+                "key": "JIRAUSER5970888",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5970888&avatarId=6999926",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5970888&avatarId=6999926"
+                },
+                "displayName": "Sam Maxim",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-05T15:06:20.042+0000",
+              "updated": "2022-08-05T15:06:20.042+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3134246",
+              "id": "3134246",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=0c56e45a724a",
+                "name": "0c56e45a724a",
+                "key": "JIRAUSER6157196",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6157196&avatarId=7201325"
+                },
+                "displayName": "dave.boroi",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Need fixed! ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=0c56e45a724a",
+                "name": "0c56e45a724a",
+                "key": "JIRAUSER6157196",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6157196&avatarId=7201325",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6157196&avatarId=7201325"
+                },
+                "displayName": "dave.boroi",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-10T14:58:28.356+0000",
+              "updated": "2022-08-10T14:58:28.356+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3137266",
+              "id": "3137266",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=1fde758ed478",
+                "name": "1fde758ed478",
+                "key": "JIRAUSER5338592",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5338592&avatarId=6272776"
+                },
+                "displayName": "István Udvari",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "upvote",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=1fde758ed478",
+                "name": "1fde758ed478",
+                "key": "JIRAUSER5338592",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5338592&avatarId=6272776",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5338592&avatarId=6272776"
+                },
+                "displayName": "István Udvari",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-15T13:38:18.744+0000",
+              "updated": "2022-08-15T13:38:18.744+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3138543",
+              "id": "3138543",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=6f73ca01f7ec",
+                "name": "6f73ca01f7ec",
+                "key": "JIRAUSER6123293",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6123293&avatarId=7164951"
+                },
+                "displayName": "NSlosberg.int",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "please fix :(",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=6f73ca01f7ec",
+                "name": "6f73ca01f7ec",
+                "key": "JIRAUSER6123293",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6123293&avatarId=7164951",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6123293&avatarId=7164951"
+                },
+                "displayName": "NSlosberg.int",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-16T16:18:19.155+0000",
+              "updated": "2022-08-16T16:18:19.155+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3143241",
+              "id": "3143241",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=5002be7685b3",
+                "name": "5002be7685b3",
+                "key": "JIRAUSER4610949",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4610949&avatarId=6476127"
+                },
+                "displayName": "Michael Frey",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "fix is urgently required",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=5002be7685b3",
+                "name": "5002be7685b3",
+                "key": "JIRAUSER4610949",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4610949&avatarId=6476127"
+                },
+                "displayName": "Michael Frey",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-23T10:33:20.839+0000",
+              "updated": "2022-08-23T10:33:20.839+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3145204",
+              "id": "3145204",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=02df034acc86",
+                "name": "02df034acc86",
+                "key": "JIRAUSER6131358",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6131358&avatarId=7173653"
+                },
+                "displayName": "Lisa May",
+                "active": true,
+                "timeZone": "America/Los_Angeles"
+              },
+              "body": "This is an urgent need for my teams.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=02df034acc86",
+                "name": "02df034acc86",
+                "key": "JIRAUSER6131358",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6131358&avatarId=7173653",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6131358&avatarId=7173653"
+                },
+                "displayName": "Lisa May",
+                "active": true,
+                "timeZone": "America/Los_Angeles"
+              },
+              "created": "2022-08-25T18:06:10.430+0000",
+              "updated": "2022-08-25T18:06:10.430+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3147787",
+              "id": "3147787",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=688f90b2fa14",
+                "name": "688f90b2fa14",
+                "key": "JIRAUSER5445695",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5445695&avatarId=6406306"
+                },
+                "displayName": "Eugenio Onofre",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "We need an urgent fix on this!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=688f90b2fa14",
+                "name": "688f90b2fa14",
+                "key": "JIRAUSER5445695",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5445695&avatarId=6406306",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5445695&avatarId=6406306"
+                },
+                "displayName": "Eugenio Onofre",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-31T00:22:50.931+0000",
+              "updated": "2022-08-31T00:22:50.931+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3147664",
+              "id": "3147664",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "body": "Hey folks,\r\n\r\nJust giving you an update as understandably this is a frustrating issue for you in using your Jira Work Management list view. There is a fix for this, but unfortunately the rollout for it had to be paused due to causing a regression in Jira Software boards.\r\n\r\nHowever, if you don't use Jira Software, we can ask support to look at turning this fix on for your site and seeing if the issue gets resolved for your JWM list view.\r\n\r\n \r\n\r\nI apologise for the inconvenience, and we are working towards being able to enable this for everyone.\r\n\r\n \r\n\r\nKind regards,\r\nWilson Wong\r\nJira Work Management Developer",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "created": "2022-08-31T05:22:56.275+0000",
+              "updated": "2022-08-31T05:28:17.878+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3147968",
+              "id": "3147968",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=df764c34eff3",
+                "name": "df764c34eff3",
+                "key": "JIRAUSER6248337",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6248337&avatarId=7295770"
+                },
+                "displayName": "Becca Colbaugh",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Wilson - my team is not on Jira Software and we don't plan to be, so I'd love to see if we can get a fix for our JWM account. How do we go about that? I've already been working with a support person on possible fixes, but we were waiting to see if the fix that was planned for end of this month globally would take care of things, but it looks like that isn't happening now. :(",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=df764c34eff3",
+                "name": "df764c34eff3",
+                "key": "JIRAUSER6248337",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6248337&avatarId=7295770",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6248337&avatarId=7295770"
+                },
+                "displayName": "Becca Colbaugh",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-31T13:46:27.878+0000",
+              "updated": "2022-08-31T13:46:27.878+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3148150",
+              "id": "3148150",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f8029cffaed9",
+                "name": "f8029cffaed9",
+                "key": "JIRAUSER5891926",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5891926&avatarId=6912623"
+                },
+                "displayName": "Amy Holcomb",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Wilson - if we are on Jira software, when can we expect this to be fixed? It is critical a feature of project organization and management. ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f8029cffaed9",
+                "name": "f8029cffaed9",
+                "key": "JIRAUSER5891926",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5891926&avatarId=6912623",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5891926&avatarId=6912623"
+                },
+                "displayName": "Amy Holcomb",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-31T14:07:19.123+0000",
+              "updated": "2022-08-31T14:07:19.123+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3148154",
+              "id": "3148154",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=315caaebec2c",
+                "name": "315caaebec2c",
+                "key": "JIRAUSER6140950",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6140950&avatarId=7183975"
+                },
+                "displayName": "Henk-Jan Wermelink",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Wilson - When can we expect the fix to be released? We encounter this in the timeline view as well as the list, and it therefore is critical for our organization.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=315caaebec2c",
+                "name": "315caaebec2c",
+                "key": "JIRAUSER6140950",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6140950&avatarId=7183975",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6140950&avatarId=7183975"
+                },
+                "displayName": "Henk-Jan Wermelink",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-08-31T14:25:53.108+0000",
+              "updated": "2022-08-31T14:26:11.348+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3148772",
+              "id": "3148772",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=646205eda384",
+                "name": "646205eda384",
+                "key": "JIRAUSER4650922",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4650922&avatarId=6286511"
+                },
+                "displayName": "Fariba",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hi Team,\r\n\r\nThank you for your understanding and patience. We do apologise for the inconvenience this bug has caused. \r\n\r\nThere is a temporary fix for this bug however this fix has other side effects that currently our development team are working on. This is the reason that the fix is not deployed widely. The side effect is that the Cloud sites that have Jira Software classic Kanban and Scrum board will be affected by [JSWCLOUD\\-23456: The temporary fix for JWMCLOUD\\-266 will cause continuous update modal when subtask card is moved to done column|https://jira.atlassian.com/browse/JSWCLOUD-23456]. The workaround for this side effect is to refresh the page.\r\n\r\nIf the side effect is not a concern for your team, please log a ticket with support so we can deploy the fix into your cloud instance.\r\n\r\nKind regards \r\n{color:#0052cc}_Fariba_{color} \r\n{color:#5e6c84}Atlassian Cloud Support{color} ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=646205eda384",
+                "name": "646205eda384",
+                "key": "JIRAUSER4650922",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4650922&avatarId=6286511",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4650922&avatarId=6286511"
+                },
+                "displayName": "Fariba",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-09-01T04:20:36.767+0000",
+              "updated": "2022-09-01T04:27:08.168+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3159620",
+              "id": "3159620",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=16d950bf6012",
+                "name": "16d950bf6012",
+                "key": "JIRAUSER6126980",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6126980&avatarId=7168882"
+                },
+                "displayName": "Ben Hoppe",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Can we get an update on when this bug will be resolved and fix deployed more widely? ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=16d950bf6012",
+                "name": "16d950bf6012",
+                "key": "JIRAUSER6126980",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6126980&avatarId=7168882",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6126980&avatarId=7168882"
+                },
+                "displayName": "Ben Hoppe",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-09-15T17:53:03.681+0000",
+              "updated": "2022-09-15T17:53:03.681+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3161739",
+              "id": "3161739",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=43c3f661fd1c",
+                "name": "43c3f661fd1c",
+                "key": "JIRAUSER5770455",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5770455&avatarId=6777627"
+                },
+                "displayName": "Derrick L",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "I don't think is should be considered Severity 3 - Minor. It might only be a cosmetic change in the UI, but it renders Work Mgmt non-functional without foundational functionality.\r\n\r\nMost users work off the List or Timeline view. No one goes into each individual card to look at child issues.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=43c3f661fd1c",
+                "name": "43c3f661fd1c",
+                "key": "JIRAUSER5770455",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5770455&avatarId=6777627",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5770455&avatarId=6777627"
+                },
+                "displayName": "Derrick L",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-09-16T20:18:39.200+0000",
+              "updated": "2022-09-16T20:18:39.200+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3165416",
+              "id": "3165416",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=2f7bddd12178",
+                "name": "2f7bddd12178",
+                "key": "JIRAUSER5933439",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5933439&avatarId=6958448"
+                },
+                "displayName": "Ymen Hdiguellou",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hi guys, are there any updates?",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=2f7bddd12178",
+                "name": "2f7bddd12178",
+                "key": "JIRAUSER5933439",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5933439&avatarId=6958448",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5933439&avatarId=6958448"
+                },
+                "displayName": "Ymen Hdiguellou",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-09-19T15:09:59.392+0000",
+              "updated": "2022-09-19T15:09:59.392+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3165976",
+              "id": "3165976",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "body": "Hey folks, \r\nThe blocker preventing wider rollout of the fix for this issue is being worked on and can be tracked here -> https://jira.atlassian.com/browse/JSWCLOUD-23456\r\n\r\nIf the side effect of this bug which only affects Jira Software is not a concern for your team or you don't use Jira Software, please log a ticket with support so we can turn on the fix for this issue for your cloud instance and try to resolve the issue for your Jira Work Management views.\r\n\r\n \r\n\r\nKind regards,\r\nWilson Wong\r\nJira Work Management Developer",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "created": "2022-09-20T05:40:43.233+0000",
+              "updated": "2022-09-20T05:40:43.233+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3179951",
+              "id": "3179951",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Just out of curiosity: If the linked issue is already being worked on ... shouldn't it be \"in progress\" then instead of \"short term backlog\"?\r\n\r\nBest regards,\r\nRoland",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-06T13:28:23.070+0000",
+              "updated": "2022-10-06T13:28:23.070+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3180142",
+              "id": "3180142",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f7e96e011694",
+                "name": "f7e96e011694",
+                "key": "JIRAUSER6595908",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6595908&avatarId=7656386"
+                },
+                "displayName": "Arthur Forestier",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hello, \r\n\r\nFor many users, it's more than only cosmetic, it's an essential feature that affects the organization of every project. \r\nThis problem is getting really annoying. \r\n\r\nCan we please get an update on this?\r\n\r\nThank you,\r\nArthur",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=f7e96e011694",
+                "name": "f7e96e011694",
+                "key": "JIRAUSER6595908",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6595908&avatarId=7656386",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6595908&avatarId=7656386"
+                },
+                "displayName": "Arthur Forestier",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-06T13:48:59.229+0000",
+              "updated": "2022-10-06T13:48:59.229+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3186025",
+              "id": "3186025",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=ddb77d11e301",
+                "name": "ddb77d11e301",
+                "key": "JIRAUSER6274876",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6274876&avatarId=7323489"
+                },
+                "displayName": "Jonas Kassan",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "hej,\r\n\r\nany news on this issue? waiting since 3rd August where it was told it is in \"short-term backlog\". Seems to be a longer term :(\r\n\r\nBest\r\n\r\nJonas",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=ddb77d11e301",
+                "name": "ddb77d11e301",
+                "key": "JIRAUSER6274876",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6274876&avatarId=7323489",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6274876&avatarId=7323489"
+                },
+                "displayName": "Jonas Kassan",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-14T07:42:52.353+0000",
+              "updated": "2022-10-14T07:42:52.353+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3186048",
+              "id": "3186048",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "body": "Hey, \r\n\r\nWe have a fix for this and are looking at rolling it out next week.\r\n\r\nThanks for your patience.\r\n\r\n \r\n\r\nKind regards,\r\nWilson Wong\r\nJira Work Management Developer",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "created": "2022-10-14T09:12:22.990+0000",
+              "updated": "2022-10-14T09:12:22.990+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3186056",
+              "id": "3186056",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=5002be7685b3",
+                "name": "5002be7685b3",
+                "key": "JIRAUSER4610949",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4610949&avatarId=6476127"
+                },
+                "displayName": "Michael Frey",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "hello,\r\n\r\nthis is great news.\r\n\r\nthank you for the info\r\n\r\nMichael",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=5002be7685b3",
+                "name": "5002be7685b3",
+                "key": "JIRAUSER4610949",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4610949&avatarId=6476127",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4610949&avatarId=6476127"
+                },
+                "displayName": "Michael Frey",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-14T09:30:59.237+0000",
+              "updated": "2022-10-14T09:30:59.237+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3191509",
+              "id": "3191509",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=73ce4b59b5f0",
+                "name": "73ce4b59b5f0",
+                "key": "JIRAUSER6077081",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6077081&avatarId=7115088"
+                },
+                "displayName": "Jake Ahearn",
+                "active": true,
+                "timeZone": "America/New_York"
+              },
+              "body": "Hi Wilson,\r\n\r\nAre you still planning on rolling this out this week/weekend?\r\n\r\nThanks,\r\n\r\nJake",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=73ce4b59b5f0",
+                "name": "73ce4b59b5f0",
+                "key": "JIRAUSER6077081",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6077081&avatarId=7115088",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6077081&avatarId=7115088"
+                },
+                "displayName": "Jake Ahearn",
+                "active": true,
+                "timeZone": "America/New_York"
+              },
+              "created": "2022-10-21T17:41:21.989+0000",
+              "updated": "2022-10-21T17:41:21.989+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3191670",
+              "id": "3191670",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=2b645080da40",
+                "name": "2b645080da40",
+                "key": "JIRAUSER7067850",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER7067850&avatarId=8144058"
+                },
+                "displayName": "Camp Bursztynowy Las",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "+1 - very much looking forward to the fix!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=2b645080da40",
+                "name": "2b645080da40",
+                "key": "JIRAUSER7067850",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER7067850&avatarId=8144058",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER7067850&avatarId=8144058"
+                },
+                "displayName": "Camp Bursztynowy Las",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-22T19:27:31.741+0000",
+              "updated": "2022-10-22T19:27:31.741+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3193633",
+              "id": "3193633",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "body": "Hey folks,\r\n\r\nJust another quick update, the fix was validated on all the test instances that support engineers provided us with.\r\n\r\nThis fix will have to be applied to individual sites, so if you're in contact with a support engineer regarding this bug please reach out to them to coordinate turning this fix on for your site next week.\r\n\r\n \r\n\r\nKind regards,\r\nWilson Wong\r\nJira Work Management Developer",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "created": "2022-10-25T03:31:43.945+0000",
+              "updated": "2022-10-25T03:31:43.945+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3193688",
+              "id": "3193688",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hi Wilson,\r\nso this means, the fix will not be rolled out in general but only per individual request, right?\r\nAs we are not yet in contact with support regarding this, we will have to contact support first. Will referencing this issue here be sufficient for requesting the fix?\r\n\r\nAdditionally, can you provide any information about the reasons for this procedure? Why the individual way?\r\n\r\nThanks and best regards,\r\nRoland",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-25T06:27:29.166+0000",
+              "updated": "2022-10-25T06:27:29.166+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3193675",
+              "id": "3193675",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "body": "Hi [~d40f27b035a4] ,\r\n\r\nYes, if you are not yet in contact with support, you'll have to raise another ticket and reference back to this issue here.\r\n\r\nThere's some technical reasons requiring a rollout in this manner unfortunately, so please get in touch with support and we hope we can resolve this for you soon.\r\n\r\nKind regards,\r\nWilson Wong\r\nJira Work Management Developer",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=wiwong",
+                "name": "wiwong",
+                "key": "wiwong",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=wiwong&avatarId=5756528",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=wiwong&avatarId=5756528",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=wiwong&avatarId=5756528",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=wiwong&avatarId=5756528"
+                },
+                "displayName": "wilson",
+                "active": true,
+                "timeZone": "Australia/Sydney"
+              },
+              "created": "2022-10-25T06:50:26.179+0000",
+              "updated": "2022-10-25T06:50:26.179+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3195333",
+              "id": "3195333",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=058256d68e79",
+                "name": "058256d68e79",
+                "key": "JIRAUSER7013889",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER7013889&avatarId=8088351"
+                },
+                "displayName": "Alexander Hermle",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hi @Staff,\r\n\r\nHow are free users like me supposed to get important bugfixes like this? I am not allowed to contact the support.\r\n\r\nThis feature is very much needed and i can not understand how it is not rolled out to the public. After working for just an hour with the new platform I already recognized this missing feature...\r\n\r\nHow am I supposed to switch to the cloud when there are such mandatory issues?\r\n\r\n \r\n\r\nI appreciate your help.\r\n\r\nBest regards,\r\n\r\nAlex",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=058256d68e79",
+                "name": "058256d68e79",
+                "key": "JIRAUSER7013889",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER7013889&avatarId=8088351",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER7013889&avatarId=8088351"
+                },
+                "displayName": "Alexander Hermle",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-26T20:39:07.411+0000",
+              "updated": "2022-10-26T20:39:07.411+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3196514",
+              "id": "3196514",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "As I understood from reply to my support request, the provided fix is not final but considered \"temporary\" and still comes at the price of the other linked bug.\r\n\r\nFrom the latest comments regarding _availability_ of this fix, it was not clear to me, that it would still be a trade-off.\r\n\r\nWith the linked issue still not showing a \"in progress\" state (still \"short term backlog\"), even though it was stated earlier that it was already being worked on, the overall situation is very disappointing to me.\r\n\r\nBest regards, \r\nRoland",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-28T09:35:41.184+0000",
+              "updated": "2022-10-28T09:35:41.184+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3204746",
+              "id": "3204746",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Another 2 weeks passed ... no updates on this?",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=d40f27b035a4",
+                "name": "d40f27b035a4",
+                "key": "JIRAUSER5073135",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5073135&avatarId=5904170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5073135&avatarId=5904170"
+                },
+                "displayName": "Roland Schroth",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-11-10T11:36:13.715+0000",
+              "updated": "2022-11-10T11:36:13.715+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3204878",
+              "id": "3204878",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=b65cb430fef5",
+                "name": "b65cb430fef5",
+                "key": "JIRAUSER5750355",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5750355&avatarId=6755196"
+                },
+                "displayName": "Liz Thron",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "@Roland - I raised a support ticket requesting the fix be applied to my account yesterday and they did it within a couple hours. I was told that this fix does NOT affect Jira Software like it had been back in September.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=b65cb430fef5",
+                "name": "b65cb430fef5",
+                "key": "JIRAUSER5750355",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5750355&avatarId=6755196",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5750355&avatarId=6755196"
+                },
+                "displayName": "Liz Thron",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-11-10T14:43:27.198+0000",
+              "updated": "2022-11-10T14:43:27.198+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3207053",
+              "id": "3207053",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=c8c6fe3153ff",
+                "name": "c8c6fe3153ff",
+                "key": "JIRAUSER4993902",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4993902&avatarId=5750883"
+                },
+                "displayName": "hatisi",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "I'm really sorry and would appreciate an up-to-date overview of what the current status of this issue is as from all the comments so far and my experience with support I'm really confused.\r\nWill the fix be applied globally?\r\nDoes the fix applied by the support affect anything in Jira?\r\nWhat should the request to support be like, as my request was answered but 3 weeks now and the fix is not applied?\r\n\r\nThanks!",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=c8c6fe3153ff",
+                "name": "c8c6fe3153ff",
+                "key": "JIRAUSER4993902",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4993902&avatarId=5750883",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4993902&avatarId=5750883"
+                },
+                "displayName": "hatisi",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-11-14T07:57:59.556+0000",
+              "updated": "2022-11-14T07:57:59.556+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3212285",
+              "id": "3212285",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=82a3c3c67cd8",
+                "name": "82a3c3c67cd8",
+                "key": "JIRAUSER6589537",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6589537&avatarId=7649938"
+                },
+                "displayName": "Shaye Murray",
+                "active": true,
+                "timeZone": "America/St_Johns"
+              },
+              "body": "Just ran into this bug less than a day before pitching to leadership to adopt JWM. This is a bad look :(",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=82a3c3c67cd8",
+                "name": "82a3c3c67cd8",
+                "key": "JIRAUSER6589537",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER6589537&avatarId=7649938",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER6589537&avatarId=7649938"
+                },
+                "displayName": "Shaye Murray",
+                "active": true,
+                "timeZone": "America/St_Johns"
+              },
+              "created": "2022-11-18T23:04:38.393+0000",
+              "updated": "2022-11-18T23:04:38.393+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1881756/comment/3212694",
+              "id": "3212694",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=1d1e429e4c79",
+                "name": "1d1e429e4c79",
+                "key": "JIRAUSER4679037",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4679037&avatarId=5751443"
+                },
+                "displayName": "Giuseppe Taroni",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Hi [~82a3c3c67cd8] , we have a [fix|https://jira.atlassian.com/browse/JWMCLOUD-266?focusedCommentId=3186048&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-3186048] we can deploy to your cloud instance if you could provide it to us. Please let me know if you have any further questions.\r\n\r\n \r\n\r\nThanks,\r\n\r\nGiuseppe",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=1d1e429e4c79",
+                "name": "1d1e429e4c79",
+                "key": "JIRAUSER4679037",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4679037&avatarId=5751443",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4679037&avatarId=5751443"
+                },
+                "displayName": "Giuseppe Taroni",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-11-21T02:45:40.533+0000",
+              "updated": "2022-11-21T02:45:40.533+0000"
+            }
+          ],
+          "maxResults": 36,
+          "total": 36,
+          "startAt": 0
+        },
+        "priority": {
+          "self": "https://jira.atlassian.com/rest/api/2/priority/2",
+          "iconUrl": "https://jira.atlassian.com/images/icons/priorities/high.svg",
+          "name": "High",
+          "id": "2"
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "1857405",
+      "self": "https://jira.atlassian.com/rest/api/2/issue/1857405",
+      "key": "JWMCLOUD-180",
+      "fields": {
+        "summary": "TMP Resolution field does not change to resolve when issue move to done",
+        "issuetype": {
+          "self": "https://jira.atlassian.com/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://jira.atlassian.com/secure/viewavatar?size=xsmall&avatarId=51493&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 51493
+        },
+        "created": "2022-02-22T15:08:38.000+0000",
+        "description": "h3. Issue Summary\r\n\r\nIn JWM projects we don't add resolution fields into our templates (we choose not to do it), however, this field is still visible in the issue navigator and might cause confusion. In CMP the customer can always create a post function to make this transition to resolved happens, but there is no workaround in TMP\r\nh3. Steps to Reproduce\r\n # Move a ticket to “done” or any status that means resolve\r\n\r\nh3. Expected Results\r\n\r\nResolution field to be resolved\r\nh3. Actual Results\r\n\r\nThe resolution field stays unresolved\r\nh3. Workaround\r\n\r\nYou can create an automation to change the value of the field Resolution to \"Done\", once the issue is transitioned to Done.\r\n\r\nThis is accessible via *_System » Global Automation_*\r\n\r\n!Automation Resolution.png|thumbnail!",
+        "reporter": {
+          "self": "https://jira.atlassian.com/rest/api/2/user?username=ec42d141de9c",
+          "name": "ec42d141de9c",
+          "key": "JIRAUSER4624439",
+          "avatarUrls": {
+            "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4624439&avatarId=6409341",
+            "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4624439&avatarId=6409341",
+            "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4624439&avatarId=6409341",
+            "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4624439&avatarId=6409341"
+          },
+          "displayName": "Marcelo B",
+          "active": true,
+          "timeZone": "UTC"
+        },
+        "comment": {
+          "comments": [
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1857405/comment/3012835",
+              "id": "3012835",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=8b512083784e",
+                "name": "8b512083784e",
+                "key": "JIRAUSER4931824",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4931824&avatarId=5842391"
+                },
+                "displayName": "Edoardo Landi",
+                "active": true,
+                "timeZone": "Europe/Rome"
+              },
+              "body": "FYI\r\n\r\nhttps://community.atlassian.com/t5/Jira-Work-Management-Questions/Resolution-in-team-based-project/qaq-p/1983515?utm_source=atlcomm&utm_medium=email&utm_campaign=mentions_answer&utm_content=topic#U1983985",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=8b512083784e",
+                "name": "8b512083784e",
+                "key": "JIRAUSER4931824",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4931824&avatarId=5842391",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4931824&avatarId=5842391"
+                },
+                "displayName": "Edoardo Landi",
+                "active": true,
+                "timeZone": "Europe/Rome"
+              },
+              "created": "2022-03-26T14:58:01.754+0000",
+              "updated": "2022-03-26T14:58:01.754+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1857405/comment/3183525",
+              "id": "3183525",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=544b9afddf3d",
+                "name": "544b9afddf3d",
+                "key": "JIRAUSER5468067",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5468067&avatarId=6433168"
+                },
+                "displayName": "jeff.quach",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "Workaround was useful - but getting there was the worst!\r\nBecause you can't find the field itself in the project and obviously you try and self-solve it really hurts to see that it's a poorly configured template at the end of the day.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=544b9afddf3d",
+                "name": "544b9afddf3d",
+                "key": "JIRAUSER5468067",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5468067&avatarId=6433168",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5468067&avatarId=6433168"
+                },
+                "displayName": "jeff.quach",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-12T00:44:35.298+0000",
+              "updated": "2022-10-12T00:44:35.298+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1857405/comment/3194079",
+              "id": "3194079",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=03c822d7804d",
+                "name": "03c822d7804d",
+                "key": "JIRAUSER5561401",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5561401&avatarId=6541324"
+                },
+                "displayName": "Chris Rogers",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "This appears to be closely related, if not duplicated by https://jira.atlassian.com/browse/JWMCLOUD-210\r\n\r\nThe Created vs. Resolved and Created Issues reports built into the template will not reflect resolved issues because no resolution is set, and there is no option to do so aside from automation.",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=03c822d7804d",
+                "name": "03c822d7804d",
+                "key": "JIRAUSER5561401",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5561401&avatarId=6541324",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5561401&avatarId=6541324"
+                },
+                "displayName": "Chris Rogers",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-25T20:50:25.075+0000",
+              "updated": "2022-10-25T20:50:25.075+0000"
+            }
+          ],
+          "maxResults": 3,
+          "total": 3,
+          "startAt": 0
+        },
+        "priority": {
+          "self": "https://jira.atlassian.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.atlassian.com/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "1908713",
+      "self": "https://jira.atlassian.com/rest/api/2/issue/1908713",
+      "key": "JSWSERVER-21566",
+      "fields": {
+        "summary": "Adding custom holidays does not reflect in Jira calendar view",
+        "issuetype": {
+          "self": "https://jira.atlassian.com/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://jira.atlassian.com/secure/viewavatar?size=xsmall&avatarId=51493&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 51493
+        },
+        "created": "2022-12-09T16:17:44.000+0000",
+        "description": "h3. Issue Summary\r\n\r\nAdding custom holidays does not reflect in Jira calendar view\r\nThis is reproducible on Data Center: (yes)\r\n\r\nh3. Steps to Reproduce\r\n\r\nAdd custom holidays to your agile board\r\n\r\n !screenshot-1.png|thumbnail! \r\n \r\nh3. Expected Results\r\nThe actual holidays are to be shown in red\r\n\r\nh3. Actual Results\r\nThe default Sat/Sun is highlighted in red.\r\n\r\n !screenshot-2.png|thumbnail! \r\n \r\nh3. Workaround\r\n\r\nCurrently, there is no known workaround for this behavior. A workaround will be added here when available",
+        "reporter": {
+          "self": "https://jira.atlassian.com/rest/api/2/user?username=aali%40atlassian.com",
+          "name": "aali@atlassian.com",
+          "key": "JIRAUSER4545283",
+          "avatarUrls": {
+            "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4545283&avatarId=6021892",
+            "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4545283&avatarId=6021892",
+            "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4545283&avatarId=6021892",
+            "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4545283&avatarId=6021892"
+          },
+          "displayName": "Amro Ali",
+          "active": true,
+          "timeZone": "UTC"
+        },
+        "comment": {
+          "comments": [],
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "priority": {
+          "self": "https://jira.atlassian.com/rest/api/2/priority/3",
+          "iconUrl": "https://jira.atlassian.com/images/icons/priorities/medium.svg",
+          "name": "Medium",
+          "id": "3"
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "1866101",
+      "self": "https://jira.atlassian.com/rest/api/2/issue/1866101",
+      "key": "JSWSERVER-21305",
+      "fields": {
+        "summary": "When Lexorank duplicate rank problem is fixed through REST API, it does not clear the failure reason",
+        "issuetype": {
+          "self": "https://jira.atlassian.com/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://jira.atlassian.com/secure/viewavatar?size=xsmall&avatarId=51493&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 51493
+        },
+        "created": "2022-03-30T17:40:49.000+0000",
+        "description": "h3. Issue Summary\r\n\r\nThis is reproducible on Data Center: yes\r\nh3. Steps to Reproduce\r\n # Deliberately update the database so that two rows in the \"AO_60DB71_LEXORANK\" table have the same Rank value. \r\n # Run the Lexorank check in the UI.  It will fail on the last test - the duplicate rank test. \r\n # Follow the [https://confluence.atlassian.com/jirakb/how-to-fix-duplicate-rank-values-for-a-rank-field-779159224.html] to get the results of the integrity checks from the endpoint /rest/greenhopper/1.0/lexorank/integrity.  The last check will fail and list the failure reason with the duplicated value.  \r\n # Run the REST API call via Postman to fix the duplicate rank. \r\n # Run the integrity check again from the endpoint   /rest/greenhopper/1.0/lexorank/integrity.  \r\n\r\nh3. Expected Results\r\n\r\nIt will have fixed the Lexorank duplicate and clear the failure reason. \r\nh3. Actual Results\r\n\r\nThe duplicate rank issue is fixed and the test passes but it still lists a failure reason:\r\n{noformat}\r\n\"name\":\"Duplicate ranks check\",\"description\":\"Checks if there are any duplicate rank values for a rank field.\",\"passed\":true,\"failureReason\":\"Detected duplicate ranks for rank field 10100 : {0|i0001j:=2}\",\"fatal\":false  {noformat}\r\nh3. Workaround\r\n\r\n\r\nCurrently there is no known workaround for this behavior. A workaround will be added here when available",
+        "reporter": {
+          "self": "https://jira.atlassian.com/rest/api/2/user?username=samann",
+          "name": "samann",
+          "key": "samann",
+          "avatarUrls": {
+            "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=samann&avatarId=5816388",
+            "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=samann&avatarId=5816388",
+            "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=samann&avatarId=5816388",
+            "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=samann&avatarId=5816388"
+          },
+          "displayName": "Sarah A",
+          "active": true,
+          "timeZone": "America/Chicago"
+        },
+        "comment": {
+          "comments": [
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1866101/comment/3089256",
+              "id": "3089256",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=35da6706bcca",
+                "name": "35da6706bcca",
+                "key": "JIRAUSER4870765",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4870765&avatarId=6635201"
+                },
+                "displayName": "Cengiz Akyildiz",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "It looks like the command explained in the KB article referred above for fixing the duplicates actually fixes one duplicate at a time. Running the command several times until getting no error message for duplicate values, fixes the problem at the end. In my case I had to run the fix command around 25 times to fix all duplicates on Jira V.8.20.7. Maybe it helps for those with low number of duplicate LexoRank duplicate rank values.\r\n\r\n.  ",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=35da6706bcca",
+                "name": "35da6706bcca",
+                "key": "JIRAUSER4870765",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER4870765&avatarId=6635201",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER4870765&avatarId=6635201"
+                },
+                "displayName": "Cengiz Akyildiz",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-06-27T17:40:22.274+0000",
+              "updated": "2022-06-27T17:40:22.274+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1866101/comment/3089259",
+              "id": "3089259",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=3c25206fc48e",
+                "name": "3c25206fc48e",
+                "key": "vasily_prokhorov",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=vasily_prokhorov&avatarId=5834387",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=vasily_prokhorov&avatarId=5834387",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=vasily_prokhorov&avatarId=5834387",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=vasily_prokhorov&avatarId=5834387"
+                },
+                "displayName": "Vasily Prokhorov",
+                "active": true,
+                "timeZone": "America/New_York"
+              },
+              "body": "Thanks Akyildiz :)\r\n\r\nI'm actually the reason this defect was open since I tried using the REST API to resolve the issue in our production environment and ended up doing DB mod.\r\n\r\nGood to know I just need to run the REST API call a few times :)",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=3c25206fc48e",
+                "name": "3c25206fc48e",
+                "key": "vasily_prokhorov",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=vasily_prokhorov&avatarId=5834387",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=vasily_prokhorov&avatarId=5834387",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=vasily_prokhorov&avatarId=5834387",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=vasily_prokhorov&avatarId=5834387"
+                },
+                "displayName": "Vasily Prokhorov",
+                "active": true,
+                "timeZone": "America/New_York"
+              },
+              "created": "2022-06-27T17:58:34.342+0000",
+              "updated": "2022-06-27T17:58:34.342+0000"
+            },
+            {
+              "self": "https://jira.atlassian.com/rest/api/2/issue/1866101/comment/3188539",
+              "id": "3188539",
+              "author": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=610caa47fd3d",
+                "name": "610caa47fd3d",
+                "key": "JIRAUSER5092559",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5092559&avatarId=5942170"
+                },
+                "displayName": "Keith Shaw",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "body": "This impacts us on 8.20.2",
+              "updateAuthor": {
+                "self": "https://jira.atlassian.com/rest/api/2/user?username=610caa47fd3d",
+                "name": "610caa47fd3d",
+                "key": "JIRAUSER5092559",
+                "avatarUrls": {
+                  "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=JIRAUSER5092559&avatarId=5942170",
+                  "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=JIRAUSER5092559&avatarId=5942170"
+                },
+                "displayName": "Keith Shaw",
+                "active": true,
+                "timeZone": "UTC"
+              },
+              "created": "2022-10-18T18:46:21.891+0000",
+              "updated": "2022-10-18T18:46:21.891+0000"
+            }
+          ],
+          "maxResults": 3,
+          "total": 3,
+          "startAt": 0
+        },
+        "priority": {
+          "self": "https://jira.atlassian.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.atlassian.com/images/icons/priorities/low.svg",
+          "name": "Low",
+          "id": "4"
+        }
+      }
+    },
+    {
+      "expand": "operations,versionedRepresentations,editmeta,changelog,renderedFields",
+      "id": "1766450",
+      "self": "https://jira.atlassian.com/rest/api/2/issue/1766450",
+      "key": "JSWSERVER-20977",
+      "fields": {
+        "summary": "The development status summary panel is timing out when under heavy load even if data is available",
+        "issuetype": {
+          "self": "https://jira.atlassian.com/rest/api/2/issuetype/1",
+          "id": "1",
+          "description": "A problem which impairs or prevents the functions of the product.",
+          "iconUrl": "https://jira.atlassian.com/secure/viewavatar?size=xsmall&avatarId=51493&avatarType=issuetype",
+          "name": "Bug",
+          "subtask": false,
+          "avatarId": 51493
+        },
+        "created": "2021-06-09T14:26:43.000+0000",
+        "description": "h3. Issue Summary\r\nThe development status summary panel is timing out when under heavy load even if data is available\r\nh3. Steps to Reproduce\r\n# Connect a DVCS integration (Bitbucket, Gitlab or Github) with a linked issue\r\n# Open 30+ tabs that auto-refresh (can use http://www.dummysoftware.com/easy-auto-refresh/?ref=chrome for this)\r\n# In a separate browser open that same issue and refresh a few times until you see an error message about timeout or failure to load under the dev panel:\r\n !Screenshot 2021-06-09 at 16.22.00.png|thumbnail! \r\n\r\nThe following exception is thrown into logs:\r\n{noformat}\r\n2021-06-09 15:02:19,323+0100 http-nio-2990-exec-218 WARN admin 902x36691x25 eeeqnf 127.0.0.1 /rest/dev-status/1.0/issue/summary [c.a.j.p.devstatus.provider.DefaultCoordinator] GitLab (timeout after 5000ms, cached data returned)\r\n{noformat}\r\n\r\nThere’s only 15 threads max that can fetch DVCS data at a time so this is causing contention:\r\n\r\n{code:java}\r\n   this.dvcsDataFetcherExecutor = ThreadPool.builder()\r\n                .name(\"dvcs.\" + dvcsType())\r\n                .maxThreads(15)\r\n                .boundedQueue(QUEUE_SIZE)\r\n                .build();\r\n{code}\r\n\r\nand the call to timeout. Note that increasing the timeout will not help here.\r\n\r\n\r\nh3. Expected Results\r\nDVCS data related to the issue should load in the Dev Panel.\r\nh3. Actual Results\r\nData is not loaded into the dev panel which should return either the cached existing data or the new one stored into DB after soft or hard sync.\r\n\r\nh3. Workaround\r\nCurrently there is no known workaround for this behavior. A workaround will be added here when available",
+        "reporter": {
+          "self": "https://jira.atlassian.com/rest/api/2/user?username=tmarchionni%40atlassian.com",
+          "name": "tmarchionni@atlassian.com",
+          "key": "tmarchionni@atlassian.com",
+          "avatarUrls": {
+            "48x48": "https://jira.atlassian.com/secure/useravatar?ownerId=tmarchionni%40atlassian.com&avatarId=6020715",
+            "24x24": "https://jira.atlassian.com/secure/useravatar?size=small&ownerId=tmarchionni%40atlassian.com&avatarId=6020715",
+            "16x16": "https://jira.atlassian.com/secure/useravatar?size=xsmall&ownerId=tmarchionni%40atlassian.com&avatarId=6020715",
+            "32x32": "https://jira.atlassian.com/secure/useravatar?size=medium&ownerId=tmarchionni%40atlassian.com&avatarId=6020715"
+          },
+          "displayName": "Tiziana Marchionni",
+          "active": true,
+          "timeZone": "UTC"
+        },
+        "comment": {
+          "comments": [],
+          "maxResults": 0,
+          "total": 0,
+          "startAt": 0
+        },
+        "priority": {
+          "self": "https://jira.atlassian.com/rest/api/2/priority/4",
+          "iconUrl": "https://jira.atlassian.com/images/icons/priorities/low.svg",
+          "name": "Low",
+          "id": "4"
+        }
+      }
+    }
+  ]
+}

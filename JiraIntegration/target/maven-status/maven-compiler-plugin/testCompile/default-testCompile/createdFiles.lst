@@ -1,0 +1,4 @@
+com\jiraintegration\TestHelper.class
+com\jiraintegration\fetcher\JiraFetcherTest.class
+com\jiraintegration\parser\JiraParserTest.class
+com\jiraintegration\persister\JiraPersisterTest.class
