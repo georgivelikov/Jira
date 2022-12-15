@@ -2,8 +2,8 @@ package com.jiraintegration.scraper.executor;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.ScheduledFuture;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 import com.jiraintegration.scraper.ExecutableScraper;
@@ -15,7 +15,7 @@ import lombok.extern.log4j.Log4j2;
 @RequiredArgsConstructor
 public class JiraExecutor implements ScraperExecutor, ScraperStopper {
 
-  private final ScheduledThreadPoolExecutor executorService;
+  private final ScheduledExecutorService executorService;
   private final Map<Runnable, ScheduledFuture<?>> identityMap = new HashMap<>();
 
   public void execute(ExecutableScraper jiraScraper) {
@@ -31,13 +31,13 @@ public class JiraExecutor implements ScraperExecutor, ScraperStopper {
     future.cancel(true);
     boolean shouldShutdown = true;
     for (ScheduledFuture<?> f : identityMap.values()) {
-      if(!f.isDone()) {
+      if (!f.isDone()) {
         shouldShutdown = false;
         break;
       }
     }
 
-    if(shouldShutdown) {
+    if (shouldShutdown) {
       log.info("All scrapers finished. Shutting down Jira Executor...");
       this.executorService.shutdown();
     }

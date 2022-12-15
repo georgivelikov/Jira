@@ -2,7 +2,6 @@ package com.jiraintegration;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
-import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 import com.jiraintegration.configuration.ConfigurationLoader;
 import com.jiraintegration.configuration.JiraConfiguration;
@@ -18,8 +17,8 @@ public class Main {
 
   public static void main(String[] args) throws JiraException {
     String[][] mArgs = new String[2][];
-    String[] xmlArgs = new String[] { "xml", "200", ".\\repository", "5" };
-    String[] jsonArgs = new String[] { "json", "120", ".\\repository", "7" };
+    String[] xmlArgs = new String[]{"xml", "200", ".\\repository", "5"};
+    String[] jsonArgs = new String[]{"json", "120", ".\\repository", "7"};
     mArgs[0] = xmlArgs;
     mArgs[1] = jsonArgs;
     startMultiple(mArgs);
@@ -34,16 +33,15 @@ public class Main {
 
   private static void startMultiple(String[][] mArgs) throws JiraException {
     JiraExecutor executor = new JiraExecutor(getExecutor(mArgs.length));
-    for (String[] args : mArgs ) {
+    for (String[] args : mArgs) {
       JiraConfiguration configuration = loadConfig(args);
       ExecutableScraper jiraScraper = ScraperFactory.getJiraExecutableScraper(configuration);
       executor.execute(jiraScraper);
     }
   }
 
-  private static ScheduledThreadPoolExecutor getExecutor(int threadPoolSize) {
-    ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(threadPoolSize);
-    executor.setRemoveOnCancelPolicy(true);
+  private static ScheduledExecutorService getExecutor(int threadPoolSize) {
+    ScheduledExecutorService executor = Executors.newScheduledThreadPool(threadPoolSize);
 
     return executor;
   }
@@ -52,7 +50,7 @@ public class Main {
     JiraConfiguration configuration = null;
     try {
       configuration = ConfigurationLoader.load(args);
-    } catch(JiraException ex) {
+    } catch (JiraException ex) {
       log.error(ex);
       System.exit(111);
     }
