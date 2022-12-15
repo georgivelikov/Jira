@@ -1,6 +1,8 @@
 package com.jiraintegration;
 
 import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.ScheduledThreadPoolExecutor;
 
 import com.jiraintegration.configuration.ConfigurationLoader;
 import com.jiraintegration.configuration.JiraConfiguration;
@@ -16,27 +18,34 @@ public class Main {
 
   public static void main(String[] args) throws JiraException {
     String[][] mArgs = new String[2][];
-    String[] xmlArgs = new String[] { "xml", "100", ".\\repository", "5" };
-    String[] jsonArgs = new String[] { "json", "50", ".\\repository", "7" };
+    String[] xmlArgs = new String[] { "xml", "200", ".\\repository", "5" };
+    String[] jsonArgs = new String[] { "json", "120", ".\\repository", "7" };
     mArgs[0] = xmlArgs;
     mArgs[1] = jsonArgs;
     startMultiple(mArgs);
   }
 
   private static void startSingle(String[] args) throws JiraException {
-    JiraExecutor executor = new JiraExecutor(Executors.newSingleThreadScheduledExecutor());
+    JiraExecutor executor = new JiraExecutor(getExecutor(1));
     JiraConfiguration configuration = loadConfig(args);
     ExecutableScraper jiraScraper = ScraperFactory.getJiraExecutableScraper(configuration);
     executor.execute(jiraScraper);
   }
 
   private static void startMultiple(String[][] mArgs) throws JiraException {
-    JiraExecutor executor = new JiraExecutor(Executors.newScheduledThreadPool(mArgs.length));
+    JiraExecutor executor = new JiraExecutor(getExecutor(mArgs.length));
     for (String[] args : mArgs ) {
       JiraConfiguration configuration = loadConfig(args);
       ExecutableScraper jiraScraper = ScraperFactory.getJiraExecutableScraper(configuration);
       executor.execute(jiraScraper);
     }
+  }
+
+  private static ScheduledThreadPoolExecutor getExecutor(int threadPoolSize) {
+    ScheduledThreadPoolExecutor executor = new ScheduledThreadPoolExecutor(threadPoolSize);
+    executor.setRemoveOnCancelPolicy(true);
+
+    return executor;
   }
 
   private static JiraConfiguration loadConfig(String[] args) {
