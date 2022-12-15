@@ -41,7 +41,7 @@ public class JiraExecutableScraper extends JiraScraper implements ExecutableScra
         }
       } else {
         // Just stop the scraper if exception happens. Could be extended with recoverable exceptions in the future
-        log.warn("JiraScraper failed with exception: " + result.getException().getMessage());
+        log.warn("JiraScraper failed with exception: {}", result.getException().getMessage());
         this.stopperListener.stop();
       }
     }
