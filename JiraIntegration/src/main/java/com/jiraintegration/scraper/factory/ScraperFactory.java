@@ -1,5 +1,7 @@
 package com.jiraintegration.scraper.factory;
 
+import java.util.UUID;
+
 import com.jiraintegration.configuration.JiraConfiguration;
 import com.jiraintegration.exception.JiraException;
 import com.jiraintegration.fetcher.Fetcher;
@@ -11,8 +13,8 @@ import com.jiraintegration.persister.JiraPersisterJson;
 import com.jiraintegration.persister.JiraPersisterXml;
 import com.jiraintegration.persister.Persister;
 import com.jiraintegration.scraper.ExecutableScraper;
-import com.jiraintegration.scraper.impl.JiraExecutableScraper;
 import com.jiraintegration.scraper.Scraper;
+import com.jiraintegration.scraper.impl.JiraExecutableScraper;
 import com.jiraintegration.utils.http.JiraHttpClient;
 import com.jiraintegration.utils.http.JiraHttpClientApacheImpl;
 
@@ -26,11 +28,13 @@ public class ScraperFactory {
     JiraHttpClient httpClient = new JiraHttpClientApacheImpl();
     String persistLocation = configuration.getLocation();
     String scraperType = configuration.getType();
+    String id = UUID.randomUUID().toString();
     Fetcher fetcher = new JiraFetcher(httpClient, configuration.getMaxResults(), 0);
     Parser parser = new JiraParser();
     Persister persister = getPersister(scraperType, persistLocation);
 
-    return new JiraExecutableScraper(fetcher, parser, persister, configuration.getInterval());
+    System.out.println(id);
+    return new JiraExecutableScraper(id, fetcher, parser, persister, configuration.getInterval());
   }
 
   private static JiraPersister getPersister(String scraperType, String persistLocation) throws JiraException {

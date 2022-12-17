@@ -5,5 +5,7 @@ import com.jiraintegration.result.JiraResult;
 
 public interface Scraper {
 
+  String getId();
+
   JiraResult scrape() throws JiraException;
 }

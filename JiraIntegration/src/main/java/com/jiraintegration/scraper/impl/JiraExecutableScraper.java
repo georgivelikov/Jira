@@ -18,8 +18,8 @@ public class JiraExecutableScraper extends JiraScraper implements ExecutableScra
   private final int interval;
   private ScraperStopper stopperListener;
 
-  public JiraExecutableScraper(Fetcher fetcher, Parser parser, Persister persister, int interval) {
-    super(fetcher, parser, persister);
+  public JiraExecutableScraper(String id, Fetcher fetcher, Parser parser, Persister persister, int interval) {
+    super(id, fetcher, parser, persister);
     this.interval = interval;
   }
 
@@ -35,7 +35,7 @@ public class JiraExecutableScraper extends JiraScraper implements ExecutableScra
       if (result.isSuccess()) {
         if (result.isFinished()) {
           log.info("Jira {} scraper finished successfully", getPersister().getFileType());
-          this.stopperListener.stop(this);
+          this.stopperListener.stop(getId());
         } else {
           log.info("Persisted: {} {} issues", result.getPersistedIssues(), getPersister().getFileType());
         }
@@ -43,7 +43,7 @@ public class JiraExecutableScraper extends JiraScraper implements ExecutableScra
         // Just stop the scraper if exception happens. Could be extended with recoverable exceptions in the future
         log.warn("Jira {} scraper failed with exception: {}", getPersister().getFileType(),
             result.getException().getMessage());
-        this.stopperListener.stop(this);
+        this.stopperListener.stop(getId());
       }
     }
   }
